@@ -1,0 +1,186 @@
+@font-face{
+    font-family: 'roboto';
+    src: url('gllacy/fonts/web/roboto.woff') format(woff),
+         url('gllacy/fonts/web/roboto.woff2') format(woff2),
+         url('gllacy/fonts/web/robotobold.woff') format(woff),
+         url('gllacy/fonts/web/robotobold.woff2') format(woff2),
+         url('gllacy/fonts/web/robotomedium.woff') format(woff),
+         url('gllacy/fonts/web/robotomedium.woff2') format(woff2);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "roboto";
+    font-size: 16px;
+    line-height: 22px;
+    background-color: #8996a6;
+    color: #fff;
+}
+
+.main-navigation {
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+}
+
+.site-navigation {
+    list-style: none;
+    font-weight: bold;
+}
+
+.user-navigation{
+    list-style: none;
+    font-weight: normal;
+}
+
+.site-navigation a{
+    color: #fff;
+}
+
+.user-navigation button{
+    color: #fff;
+    background-color: #a1abb8;
+}
+.site-navigation a:hover,
+.user-navigation button:hover,
+.site-navigation a:focus,
+.user-navigation button:focus{
+    background-color: #fff;
+    color: #000;
+}
+
+.contacts{
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: bold;
+    text-align: right;
+
+}
+
+.tel-number{
+    font-size: 22px;
+    line-height: 24px;
+}
+.best-offers p, a{
+    text-align: center;
+    color: #fff;
+}
+    
+.best-offers p{
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: bold;
+}
+
+.promo{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+}
+.promo a{
+    text-decoration: none;
+}
+.promo h3{
+    font-size: 35px;
+    line-height: 41px;
+    font-weight: bold;
+}
+.rusberry-cell{
+    background-color: rgb(214, 70, 125);
+}
+
+.chocolate-cell{
+    background-color: rgb(94, 46, 23);
+}
+.hits {
+    list-style: none;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: normal;
+}
+
+.hits p{
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: bold;
+}
+
+.advantages{
+    list-style: none;
+    color: #323232;
+    background-color: burlywood;
+}
+
+.advantages h3{
+    
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.advantages p{
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.news{
+    background-color: white;
+    font-size: 16px;
+    line-height: 22px;
+    color: #323232;
+}
+
+.news a{
+    font-size: 24px;
+    line-height: 30px;
+    color: #323232;
+}
+.news a :focus,
+.news a:hover{
+    color: #e84c36;
+}
+
+
+.mail{
+    font-size: 16px;
+    line-height: 22px;
+    color: #5a5a5a;
+    background-color: #f8f7f4;
+}
+
+.contacts-form{
+    background-color: white;
+    font-size: 16px;
+    line-height: 22px;
+    color: #323232;
+}
+
+.contacts-form strong{
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.fotter-navigation{
+    font-size: 13px;
+    line-height: 18px;
+    list-style: none;
+    font-weight: normal;
+    text-align: center;
+}
+.social-net{
+    list-style: none;
+}
+
+.social-net a{
+    text-decoration: none;
+}
+
+.fotter-navigation a:hover,
+.social-net button:hover,
+.fotter-navigation a:focus,
+.social-net button:focus{
+    background-color: #fff;
+    color: #000;
+}
