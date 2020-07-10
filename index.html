@@ -2,19 +2,19 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <!--<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">-->
         <link href="normalize.css" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
         <title>Gllacy Shop</title>
     </head>
-    <body>
-        <header>
-            <nav>
-                <a>
+    <body class="container">
+        <header class="main-navigation">
+            <nav class="main-nav">
+                <a class="header-logo">
                 <img src="gllacy/svg/logo.svg" width="154" height="64" 
                 alt "Логотип магазина Gllacy Shop">
                 </a>
-                <ul class="main-navigation, site-navigation">
+                <ul class="site-navigation">
                     <li><a href="catalog.html">Каталог</a></li>
                     <li><a href="delivery.html">Доставка и оплата</a></li>
                     <li><a href="AboutUs.html">О компании</a></li>
@@ -24,36 +24,39 @@
                     <li><button type="button">Вход</button></li>
                     <li><button type="button">Корзина</button></li>
                 </ul>
-                <div class ="contacts">
-                    <p>С 10 до 20, ежедневно</p>
-                    <p class="tel-number">8 812 450-25-25</p>
-                </div>
+                
             </nav>
-        </header>
-        <main>
-            <h1>Gllacy Shop</h1>
+        
+            <h1 class="invisible">Gllacy Shop</h1>
+            <div class ="contacts">
+                <p>С 10 до 20, ежедневно</p>
+                <p class="tel-number">8 812 450-25-25</p>
+            </div>
             <section class="best-offers">
-                <h2>Лучшие предложения</h2>
-                <p>Шоколадный пломбир<br> и лимонный сорбет</p>
-                <img src="gllacy/png/Ice-cream.png">
-                <a href="catalog.html">Дайте оба!</a>
-                <ul>
-                    <li>
-                        <input type="radio" name="chocolate" id="1" checked>
-                        <label for="1"></label>
-                    </li>
-                    <li>
-                        <input type="radio" name="chocolate" id="2">
-                        <label for="2"></label>
-                    </li>
-                    <li>
-                        <input type="radio" name="chocolate" id="3">
-                        <label for="3"></label>
-                    </li>
-                </ul>
+                <h2 class="invisible">Лучшие предложения</h2>
+                <p> Шоколадный пломбир<br> и лимонный сорбет</p>
+                <div class="ice-cream-selector">
+                    <a href="catalog.html">Дайте оба!</a>
+                    <ul class="dotes">
+                        <li>
+                            <input type="radio" name="chocolate" id="1" checked>
+                            <label for="1"></label>
+                        </li>
+                        <li>
+                            <input type="radio" name="chocolate" id="2">
+                            <label for="2"></label>
+                        </li>
+                        <li>
+                            <input type="radio" name="chocolate" id="3">
+                            <label for="3"></label>
+                        </li>
+                    </ul>
+                </div>
             </section>
+        </header>
+        <main class="container">
             <section class="promo">
-                <h2>Акции</h2>
+                <h2 class="invisible">Акции</h2>
                 <div class="rusberry-cell">
                     <h3>Малинка даром!</h3>
                     <p>При покупке 2 кг любого фруктового мороженного, добавим

@@ -18,6 +18,10 @@ body{
     line-height: 22px;
     background-color: #8996a6;
     color: #fff;
+    background-image: url(gllacy/png/Ice-cream.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+
 }
 
 .main-navigation {
