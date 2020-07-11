@@ -5,9 +5,10 @@
         <!--<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">-->
         <link href="normalize.css" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
-        <title>Gllacy Shop</title>
+        <title class="visually-hidden">Gllacy Shop</title>
     </head>
-    <body class="container">
+    <body>
+        <div class="container">
         <header class="main-navigation">
             <nav class="main-nav">
                 <a class="header-logo">
@@ -15,28 +16,28 @@
                 alt "Логотип магазина Gllacy Shop">
                 </a>
                 <ul class="site-navigation">
-                    <li><a href="catalog.html">Каталог</a></li>
-                    <li><a href="delivery.html">Доставка и оплата</a></li>
-                    <li><a href="AboutUs.html">О компании</a></li>
+                    <li class="item-site-navigation"><a href="catalog.html">Каталог</a></li>
+                    <li class="item-site-navigation"><a href="delivery.html">Доставка и оплата</a></li>
+                    <li class="item-site-navigation"><a href="AboutUs.html">О компании</a></li>
                 </ul>
                 <ul class="user-navigation"> 
-                    <li><button type="button">Поиск</button></li>
-                    <li><button type="button">Вход</button></li>
-                    <li><button type="button">Корзина</button></li>
+                    <li><button type="button" class="search-button"></button></li>
+                    <li><button type="button" class="login-icon"></button></li>
+                    <li><button type="button" class="shopping-cart"></button></li>
                 </ul>
                 
             </nav>
         
-            <h1 class="invisible">Gllacy Shop</h1>
+            <h1 class="visually-hidden">Gllacy Shop</h1>
             <div class ="contacts">
-                <p>С 10 до 20, ежедневно</p>
+                <p class="work-time">С 10 до 20, ежедневно</p>
                 <p class="tel-number">8 812 450-25-25</p>
             </div>
             <section class="best-offers">
-                <h2 class="invisible">Лучшие предложения</h2>
+                <h2 class="visually-hidden">Лучшие предложения</h2>
                 <p> Шоколадный пломбир<br> и лимонный сорбет</p>
                 <div class="ice-cream-selector">
-                    <a href="catalog.html">Дайте оба!</a>
+                    <a href="catalog.html" class="button give-both-button">Давайте оба!</a>
                     <ul class="dotes">
                         <li>
                             <input type="radio" name="chocolate" id="1" checked>
@@ -54,106 +55,140 @@
                 </div>
             </section>
         </header>
-        <main class="container">
+        <main>
+        <div>
             <section class="promo">
-                <h2 class="invisible">Акции</h2>
+                <h2 class="visually-hidden">Акции</h2>
                 <div class="rusberry-cell">
                     <h3>Малинка даром!</h3>
-                    <p>При покупке 2 кг любого фруктового мороженного, добавим
+                    <p>При покупке 2 кг любого фруктового мороженного, добавим <br>
                         в ваш заказ банку малинового варенья бесплатно.</p>
-                    <a href="#">Хочу варенье!</a>
+                    <a href="#" class="button rusberry-button">Хочу варенье!</a>
                 </div>
                 <div class="chocolate-cell">
                     <h3>Шоколадки даром!</h3>
                     <p>При покупле 2 кг пломбира, добавим в ваш заказ упаковку
                         вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-                    <a href="#">Хочу шоколадки!</a>
+                    <a href="#" class="button chocolate-button">Хочу шоколадки!</a>
                 </div>
 
             </section>
             <section>
                 <ul class="hits">
                     <li>
-                        <img src="gllacy/png/1.jpg" width = 267 height="267"
+                        <img class="round" src="gllacy/png/1.jpg" width = "267" height="267"
                         alt "Сливочное с апельсиновым джемом">
-                        <p>310 ₽/кг<br></p>
-                        <a href="#">Сливочное с апельсиновым<br> джемом и цитрусовой стружкой</a>
+                        <div class="price-content">
+                            <p class="price">310 ₽/<b>кг</b><br></p>
+                            <div class="price-description">
+                                <a href="#" class="hits-links">Сливочное с апельсиновым<br> джемом и цитрусовой стружкой</a>
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        <img src="gllacy/png/2.jpg" width = 267 height="267"
+                        <img class="round" src="gllacy/png/2.jpg" width = "267" height="267"
                         alt "Сливочно-кофейное мороженое">
-                        <p>380 ₽/кг<br></p>
-                        <a href="#">Сливочно-кофейное с кусочками<br> шоколада</a>
+                        <div class="price-content">
+                            <p class="price">380 ₽/<b>кг</b><br></p>
+                            <a href="#">Сливочно-кофейное с кусочками<br> шоколада</a>
+                        </div>
                     </li>
                     <li>
-                        <img src="gllacy/png/3.jpg" width = 267 height="267"
+                        <img class="round" src="gllacy/png/3.jpg" width = "267" height="267"
                         alt "Сливочно-клубничное мороженое">
-                        <p>355 ₽/кг<br></p>
-                        <a href="#">Сливочно-клубничное<br> с присыпкой из белого шоколада</a>
+                        <div class="price-content">
+                            <p class="price">355 ₽/<b>кг</b><br></p>
+                            <a href="#">Сливочно-клубничное<br> с присыпкой из белого шоколада</a>
+                        </div>
                     </li>
                     <li>
-                        <img src="gllacy/png/4.jpg" width = 267 height="267"
+                        <img class="round" src="gllacy/png/4.jpg" width = "267" height="267"
                         alt "Сливочное крем-брюле">
-                        <p>415 ₽/кг<br></p>
-                        <a href="#">Сливочное крем-брюле<br> с карамельной подливкой</a>
+                        <div class="price-content">
+                            <p class="price">415 ₽/<b>кг</b><br></p>
+                            <a href="#">Сливочное крем-брюле<br> с карамельной подливкой</a>
+                        </div>
                     </li>
                 </ul>
             </section>
             <section class="advantages">
-                <h2>Преиущества</h2>
-                <h3>Магазин Глэйси - это онлйн и офлайн-магазин по продаже мороженого 
+                <h2 class="visually-hidden">Преиущества</h2>
+                <h3>Магазин Глэйси - это онлaйн и офлайн-магазин по продаже мороженого 
                     собственного производства на развес</h3>
-                <ul class="advantages">
-                    <li>
-                        <img src="gllacy/svg/ice-cream.svg" width="49" height="49">
-                        <p>Все наше мороженое изготавливается на собственном производстве,
-                        с использованием современного оборудования и проверенных временем технологий.</p>
-                    </li>
-                    <li>
-                        <img src="gllacy/svg/eco.svg" width="49" height="49">
-                        <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-                    </li>
-                    <li>
-                        <img src="gllacy/svg/cow.svg" width="49" height="49">
-                        <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств
-                        и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-                    </li>
-                    <li>
-                        <img src="gllacy/svg/thermometer.svg" width="49" height="49">
-                        <p>Доставка нашего мороженного до заказчиков осуществляется в специальном термопаке, который не дает мороженному растаять в пути и позволяет сохранить превосходный вкус.</p>
-                    </li>
-                </ul>
+                <div class="index-columns-advantages">
+                    <ul class="columns-advantages">
+                        <li class="advantages-cell"> 
+                            <img src="gllacy/svg/ice-cream.svg" width="49" height="49">
+                            <p>Все наше мороженое изготавливается на собственном производстве,
+                            с использованием современного оборудования и проверенных временем технологий.</p>
+                        </li>
+                        <div class="advantages-cell-bottom">
+                            <li class="advantages-cell">
+                                <img src="gllacy/svg/eco.svg" width="49" height="49">
+                                <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+                            </li>
+                        </div>
+                        <li>
+                    </ul>
+                    <ul class="columns-advantages">
+                        <li class="advantages-cell">
+                            <img src="gllacy/svg/cow.svg" width="49" height="49">
+                            <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств
+                            и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+                        </li>
+                        <div class="advantages-cell-bottom">
+                            <li class="advantages-cell">
+                                <img src="gllacy/svg/thermometer.svg" width="49" height="49">
+                                <p>Доставка нашего мороженного до заказчиков осуществляется в специальном термопаке, который не дает мороженному растаять в пути и позволяет сохранить превосходный вкус.</p>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
             </section>
-            <section class="news">
-                <h2>Новости</h2>
-                <p>Новое в нашем блоге</p>
-                <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
-            </section>
-            <section class="mail">
-                <h2>Рассылка</h2>
-                <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе высочайшего
-                    самого вкусного, что у нас просходит. Обещаем не спамить и не слать всякой
-                    ненужной ерунды. Честно =)</p>
-                    <form action="#" method="post">
-                        <input id="User-email" type="email" name="Email" placeholder="email@example.com">
-                        <button type="submit">Отправить</button>
-                    </form>
-            </section>
-            <section>
-                <h2>Карта</h2>
+            <div class="news-mail">
+                <section class="news">
+                    <h2 class="visually-hidden">Новости</h2>
+                    <div class="news-text">
+                        <p>Новое в нашем блоге</p>
+                    </div>
+                    <div class="news-link">
+                        <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+                    </div>
+                </section>
+                <section class="mail">
+                    <h2 class="visually-hidden">Рассылка</h2>
+                    <p class="mail-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе высочайшего
+                        самого вкусного, что у нас просходит. Обещаем не спамить и не слать всякой
+                        ненужной ерунды. Честно =)</p>
+                        <form action="#" method="post">
+                            <input id="User-email" type="email" name="Email" placeholder="email@example.com">
+                            <button type="submit" class="button  contact-button">Отправить</button>
+                        </form>
+                </section>
+            </div>
+        </div>
+            <section class="find-us">
+                <h2 class="visually-hidden">Карта</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.60362530034!2d30.320858716533557!3d59.93871916905369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1594476798979!5m2!1sru!2sru" width="1248" height="430" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                </iframe>
                 <div class="contacts-form">
-                    <p>Адрес главного офиса<br>
-                         и офлайн-магазина:<br>
-                    <strong>ул. Большая Конюшенная<br>
+                    <div class="address">
+                        <p>Адрес главного офиса<br>
+                         и офлайн-магазина:<br></p>
+                         <p>
+                        <strong>ул. Большая Конюшенная<br>
                          19/8 Санкт-Петербург</strong></p>
-                    <p>Для заказов по телефону:<br>
-                    <strong>8 812 450-25-25</strong><br>
-                (с 10 до 20 ежедневно)</p>
-                <button type="button">Форма обратной связи</button>
+                    </div>
+                    <div class="tel-info">
+                        <p>Для заказов по телефону:<br>
+                        <strong>8 812 450-25-25</strong><br>
+                        (с 10 до 20 ежедневно)</p>
+                    </div>
+                    <button type="button" class="button button-contacts">Форма обратной связи</button>
                 </div>
             </section>
         </main>
-        <footer>
+        <footer class="container">
             <div>
                 <!--Соцсети-->
                 <ul class="social-net">
@@ -169,9 +204,11 @@
                 <li><a href="#">Наши документы</a></li>
                 <li><a href="#">Экологические стандарты</a></li>
             </ul>
-            <img src="gllacy/svg/logo-htmlacademy.svg" width="108" length="39"
-            alt "html-academy">
-            <p>Сделано в HTML Academy 2020</p>
+            <div class="developers">
+                <img src="gllacy/svg/logo-htmlacademy.svg" width="108" length="39"
+                alt "html-academy">
+                <p>Сделано в HTML Academy 2020</p>
+            </div>
         </footer>
     </body>
 </html>

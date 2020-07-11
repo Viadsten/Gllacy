@@ -24,20 +24,103 @@ body{
 
 }
 
+.button{
+    align-items: center;
+    background: linear-gradient(0, #e74b36, #f26843);
+    border-radius: 35px;
+    box-shadow: 0 0 2px #ac1000;
+    text-decoration: none;
+}
+
+.button:hover,
+.button:hover{
+    background: linear-gradient(0, #e06555, #ec7759);
+}
+
+.visually-hidden{
+    display: none;
+}
+
 .main-navigation {
     font-size: 16px;
     line-height: 18px;
     color: #fff;
+
+}
+
+.container{
+    width: 1146px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.main-nav{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.header-logo{
+    width: 175px;
+    height: 75px;
+    padding-top: 10px;
 }
 
 .site-navigation {
     list-style: none;
     font-weight: bold;
+    width: 725px;
+    height: 75px;
+    margin-bottom: 0;
+    display: flex;
+}
+
+.item-site-navigation{
+    padding-right: 25px;
+    margin-top: 10px;
+}
+
+.search-button{
+    background-image: url(gllacy/png/search-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 34px;
+    height: 34px;
+    border: none;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.login-icon{
+    background-image: url(gllacy/png/login-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 95px;
+    height: 34px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.shopping-cart{
+    background-image: url(gllacy/png/shopping-cart.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 34px;
+    border: none;
+    border-radius: 20px;
 }
 
 .user-navigation{
     list-style: none;
     font-weight: normal;
+    width: 245px;
+    height: 75px;
+    margin-bottom: 0;
+    display: flex;
 }
 
 .site-navigation a{
@@ -49,25 +132,46 @@ body{
     background-color: #a1abb8;
 }
 .site-navigation a:hover,
-.user-navigation button:hover,
-.site-navigation a:focus,
-.user-navigation button:focus{
+.site-navigation a:focus{
     background-color: #fff;
     color: #000;
 }
 
+.user-navigation button:hover,
+.user-navigation button:focus{
+    filter: invert(1);
+    background-color: #fff;
+    
+}
+
 .contacts{
+    width: 170px;
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
     font-size: 14px;
     line-height: 18px;
     font-weight: bold;
     text-align: right;
-
+    
 }
-
+.work-time{
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
 .tel-number{
     font-size: 22px;
     line-height: 24px;
+    margin: 0;
+    padding: 0;
 }
+
+.best-offers{
+    margin-top: 260px;
+    padding: 0;
+}
+
 .best-offers p, a{
     text-align: center;
     color: #fff;
@@ -77,33 +181,106 @@ body{
     font-size: 60px;
     line-height: 60px;
     font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.ice-cream-selector{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.dotes{
+    width: 80px;
+    margin-right: 355px;
+    padding: 0px;
+    height: 20px;
+    list-style: none;
+    order: -1;
+   
+}
+
+.give-both-button{
+    font-size: 32px;
+    font-weight: bold;
+    width: 280px;
+    padding-top: 18px;
+    padding-bottom: 22px;
 }
 
 .promo{
     font-size: 18px;
     line-height: 22px;
     font-weight: bold;
+    display: flex;
 }
-.promo a{
-    text-decoration: none;
-}
+
 .promo h3{
+    margin: 25px 0px 25px 20px;
+    padding: 0px;
     font-size: 35px;
-    line-height: 41px;
     font-weight: bold;
+    
 }
+
+.promo p{
+    margin: 0px 0px 50px 20px;
+    padding: 0px;
+}
+
 .rusberry-cell{
-    background-color: rgb(214, 70, 125);
+    background-color: #cc2a4f;
+    width: 560px;
+    height: 230px;
+    margin-right: 25px;
+    background-image: url(gllacy/png/rusberry.png);
+    border-radius: 15px;
+}
+
+.rusberry-button{
+    font-size: 18px;
+    font-weight: bold;
+    width: 165px;
+    padding-top: 15px;
+    padding-bottom: 18px;
+    padding-left: 22px;
+    padding-right: 22px;
+    margin-left: 375px;
+}
+
+.chocolate-button{
+    font-size: 18px;
+    font-weight: bold;
+    width: 165px;
+    padding-top: 15px;
+    padding-bottom: 18px;
+    padding-left: 22px;
+    padding-right: 22px;
+    margin-left: 350px;
 }
 
 .chocolate-cell{
-    background-color: rgb(94, 46, 23);
+    background-color: #734a2e;
+    width: 560px;
+    height: 230px;
+    background-image: url(gllacy/png/chocolate.png);
+    border-radius: 15px;
 }
+
 .hits {
     list-style: none;
     font-size: 16px;
     line-height: 22px;
     font-weight: normal;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.hits a{
+    text-align: center;
+    display: block;
 }
 
 .hits p{
@@ -111,29 +288,92 @@ body{
     line-height: 45px;
     font-weight: bold;
 }
+.round{
+    border-radius: 50%;
+}
+
+.price{
+    margin-bottom: 30px;
+}
+
+.price b{
+    font-size: 32px;
+}
+.price-content{
+    margin-top: -110px;
+}
 
 .advantages{
-    list-style: none;
-    color: #323232;
-    background-color: burlywood;
+    background-color: #f2e8d2;
+    background-image: url(gllacy/png/waffle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1146px;
+    height: 310px;
+    margin-bottom: 40px;
+    border-radius: 15px;
 }
 
 .advantages h3{
-    
+    color: #323232;
+    font-weight: normal;
     font-size: 24px;
     line-height: 30px;
+    padding-top: 30px;
+    padding-left: 20px;
+    margin: 0px;
+    
 }
 
-.advantages p{
+.columns-advantages{
+    width: 540px;
+    height: 185px;
+    list-style: none;
+    color: #323232;
+    margin: 0;
+    padding: 10px 0 0 20px;
+
+}
+
+.columns-advantages p{
     font-size: 16px;
     line-height: 22px;
+}
+.index-columns-advantages{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.advantages-cell{
+    display: flex;
+}
+
+.advantages-cell img{
+    margin-right: 7px;
+}
+
+.advantages-cell-bottom{
+    margin-top: -12px;
+    padding: 0px;
 }
 
 .news{
-    background-color: white;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 10px;
     color: #323232;
+    width: 560px;
+    height: 220px;
+    background-color: white;
+    background-image: url(gllacy/png/news-strawberry.png);
+    border-radius: 15px;
+    margin-right: 25px;
+}
+
+.news p{
+    padding-bottom: 0px;
+    padding-top: 25px;
+    margin-left: 20px;
 }
 
 .news a{
@@ -141,17 +381,69 @@ body{
     line-height: 30px;
     color: #323232;
 }
+.news-text{
+    margin: 0px;
+    padding: 0px;
+}
+.news-link{
+    margin-left: 20px;
+    padding-top: 0px;
+    margin-top: 0px;
+    width: 280px;
+}
+
 .news a :focus,
 .news a:hover{
     color: #e84c36;
 }
 
-
 .mail{
+    background-color: #f8f7f4;
+    width: 560px;
+    height: 220px;
+    background-image: url(gllacy/png/mail.png);
+    border-radius: 15px;
     font-size: 16px;
     line-height: 22px;
     color: #5a5a5a;
     background-color: #f8f7f4;
+}
+
+.mail p{
+    margin-top: 0px;
+    padding-top: 35px;
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+
+.mail form{
+    padding-left: 20px;
+}
+.mail input{
+    height: 45px;
+    width: 360px;
+    border-color: #d3d3d2;
+    border-radius: 8px;
+    text-align: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+
+.mail ::placeholder{
+    color: #d3d3d2;
+}
+.news-mail{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.find-us{
+    margin-bottom: 20px;
+}
+
+.find-us iframe{
+    border-radius: 15px;
+    margin-left: -50px;
 }
 
 .contacts-form{
@@ -159,11 +451,54 @@ body{
     font-size: 16px;
     line-height: 22px;
     color: #323232;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    margin-left: 845px;
+    margin-top: -365px;
+    position: absolute;
+    
+}
+
+.contacts-form p{
+    padding: 0;
+    margin: 0;
+}
+
+.contact-button{
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 13px;
+    padding-bottom: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.address{
+    padding: 20px 0 25px 30px;
 }
 
 .contacts-form strong{
     font-size: 18px;
     line-height: 24px;
+}
+
+.tel-info{
+    padding: 0px 0px 20px 30px;
+}
+
+.button-contacts{
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 13px;
+    padding-bottom: 16px;
+    padding-left: 28px;
+    padding-right: 28px;
+    margin-left: 25px;
 }
 
 .fotter-navigation{
@@ -173,12 +508,31 @@ body{
     font-weight: normal;
     text-align: center;
 }
+
+footer{
+    display: flex;
+}
+
 .social-net{
     list-style: none;
+    width: 185px;
+    height: 40px;
+    margin-right: 215px;
 }
 
 .social-net a{
     text-decoration: none;
+}
+
+.fotter-navigation{
+    width: 325px;
+    height: 35px;
+    margin-right: 230px;
+}
+.developers{
+    font-size: 10px;
+    width: 190px;
+    height: 60px;
 }
 
 .fotter-navigation a:hover,

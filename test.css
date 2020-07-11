@@ -1,0 +1,21 @@
+.main{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.main a{
+    background-color: blueviolet;
+}
+
+.div{
+    min-height: 50px;
+    margin-top: 50px;
+    background-color: tan;
+}
+
+.some-text{
+    background-color: aqua;
+}
+
