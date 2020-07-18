@@ -8,6 +8,7 @@ var radio3 = document.getElementById("3");
 var chocolate = document.querySelector(".offers-chocolate");
 var jam = document.querySelector(".offers-jam");
 var sorbet = document.querySelector(".offers-sorbet");
+var bodyNode = document.body || document.getElementsByTagName('body')[0];
 
 link.onclick = function() {
     modal.style.display = "block";
@@ -26,9 +27,9 @@ window.addEventListener("keydown", function (evt) {
 })
 
 radio1.onclick = function(){
-    document.body.classList.add("radio1");
-    document.body.classList.remove("radio2");
-    document.body.classList.remove("radio3");
+    bodyNode.classList.add("radio1");
+    bodyNode.classList.remove("radio2");
+    bodyNode.classList.remove("radio3");
     chocolate.style.display = "block";
     sorbet.style.display = "none"
     jam.style.display = "none";
@@ -37,9 +38,9 @@ radio1.onclick = function(){
 
 
 radio2.onclick = function(){
-    document.body.classList.add("radio2");
-    document.body.classList.remove("radio1");
-    document.body.classList.remove("radio3");
+    bodyNode.classList.add("radio2");
+    bodyNode.classList.remove("radio1");
+    bodyNode.classList.remove("radio3");
     chocolate.style.display = "none";
     sorbet.style.display = "none"
     jam.style.display = "block";
@@ -47,9 +48,9 @@ radio2.onclick = function(){
 }
 
 radio3.onclick = function(){
-    document.body.classList.add("radio3");
-    document.body.classList.remove("radio2");
-    document.body.classList.remove("radio1");
+    bodyNode.classList.add("radio3");
+    bodyNode.classList.remove("radio2");
+    bodyNode.classList.remove("radio1");
     chocolate.style.display = "none";
     sorbet.style.display = "block"
     jam.style.display = "none";
