@@ -1147,3 +1147,41 @@ footer{
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+/* catalog page */
+
+.body-catalog{
+    background-image: none;
+}
+
+.branch{
+    list-style: none;
+    width: 220px;
+    font-size: 14px;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: -14px;
+    padding: 0;
+    line-height: 0px;
+
+}
+
+.catalog-header{
+    margin-top: 25px;
+    font-size: 35px;
+}
+
+.sort{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.catalog-button-active{
+    text-decoration: none;
+    background-color: #d07058;
+    color: #fff;
+}
