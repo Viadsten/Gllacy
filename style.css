@@ -18,6 +18,12 @@
     font-style: normal;
 }
 
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -29,6 +35,7 @@ body{
     background-image: url(gllacy/png/Ice-cream.png);
     background-repeat: no-repeat;
     background-position: top center;
+    outline: none;
 }
 
 .button{
@@ -992,8 +999,9 @@ footer{
 }
 
 .popup{
-    margin: -605px 0 0 90px;
+    margin: -705px 0 0 320px;
     position: absolute;
+    display: none;
     background-color: #f8f7f4;
     width: 450px;
     height: 435px;
@@ -1071,4 +1079,12 @@ footer{
 
 .button-contacts:hover .hidden-button{
     display: block;
+}
+
+.modal-show{
+    display: block;
+}
+
+.close-button:hover{
+    cursor: pointer;
 }
