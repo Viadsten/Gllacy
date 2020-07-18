@@ -999,9 +999,10 @@ footer{
 }
 
 .popup{
-    margin: -705px 0 0 320px;
+    top: 35%;
+    left: 35%;
+    display: block;
     position: absolute;
-    display: none;
     background-color: #f8f7f4;
     width: 450px;
     height: 435px;
@@ -1087,4 +1088,15 @@ footer{
 
 .close-button:hover{
     cursor: pointer;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
 }

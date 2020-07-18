@@ -1,12 +1,12 @@
 
 var link = document.querySelector(".button-contacts");
 var hide_link = document.querySelector(".close-button");
-var modal = document.querySelector(".popup");
+var modal = document.querySelector(".modal");
 
-link.addEventListener("click", function (evt) {
-    modal.classList.add("modal-show");
-});
+link.onclick = function() {
+    modal.style.display = "block";
+}
 
-hide_link.addEventListener("click", function (evt) {
-    modal.classList.remove("modal-show");
-});
+hide_link.onclick = function() {
+    modal.style.display = "none";
+}
