@@ -30,12 +30,36 @@ body{
     font-family: "roboto";
     font-size: 16px;
     line-height: 22px;
-    background-color: #8996a6;
+    background-color: #849d8f;
     color: #fff;
-    background-image: url(gllacy/png/Ice-cream.png);
+    background-image: url(gllacy/png/Ice-cream2.png);
     background-repeat: no-repeat;
     background-position: top center;
     outline: none;
+}
+
+.radio1{
+    transition: 0.2s;
+    background-color: #849d8f;
+    background-image: url(gllacy/png/Ice-cream2.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.radio2{
+    transition: 0.2s;
+    background-color: #8996a6;
+    background-image: url(gllacy/png/Ice-cream.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.radio3{
+    transition: 0.2s;
+    background-color: #9d8b84;
+    background-image: url(gllacy/png/Ice-cream3.png);
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 
 .button{
@@ -203,7 +227,7 @@ hr{
 
 .user-navigation button{
     color: #fff;
-    background-color: #a1abb8;
+    background-color: rgba(255,255,255,0.2);
 }
 
 .item-site-navigation a:hover,
@@ -927,7 +951,7 @@ footer{
 .social-icons img{
     padding: 0px;
     margin: 0px;
-    border: 3px solid #c4cbd3;
+    border: 3px solid rgba(255,255,255,0.4);
     border-radius: 50%;
 }
 
@@ -999,8 +1023,9 @@ footer{
 }
 
 .popup{
+    animation: bounce 0.6s;
     top: 35%;
-    left: 35%;
+    left: 40%;
     display: block;
     position: absolute;
     background-color: #f8f7f4;
@@ -1082,8 +1107,28 @@ footer{
     display: block;
 }
 
+@keyframes bounce{
+    0% {
+        transform: translateY(-2000px);
+    }
+    70% {
+        transform: translateY(30px)
+    }
+
+    90% {
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
 .modal-show{
     display: block;
+}
+
+.hide-animation{
+    animation: hide 0.6s;
 }
 
 .close-button:hover{
@@ -1093,6 +1138,7 @@ footer{
 .modal{
     display: none;
     position: fixed;
+    transition: 0.3s;
     z-index: 3;
     left: 0;
     top: 0;
@@ -1100,3 +1146,4 @@ footer{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.4);
 }
+
