@@ -1174,14 +1174,53 @@ footer{
 }
 
 .sort{
+    margin: 0px;
+    padding: 0px;
+    width: 855px;
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
+.sort p{
+    margin: 0px;
+    padding: 0px 0px 10px 15px;
+    line-height: 10px;
+}
 .catalog-button-active{
     text-decoration: none;
     background-color: #d07058;
     color: #fff;
+}
+
+.sort-list{
+    padding-left: 15px;
+    width: 185px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(255,255,255,0.2);
+    color: #fff;
+}
+
+.topings{
+    border: none;
+}
+.toping-block{
+    width: 855px;
+    display: flex;
+}
+.toping-checkbox{
+    border-radius: 20px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0px;
+    margin-right: 15px;
+    padding: 0px;
+    width: 700px;
+    height: 35px;
+    justify-content: space-between;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
 }

@@ -88,7 +88,7 @@
                 <ul class="sort">
                     <li>
                         <p>Сортировка:</p>
-                        <select>
+                        <select class="sort-list">
                             <option>по популярности</option>
                             <option>сначала недорогие</option>
                             <option>сначала дорогие</option>
@@ -100,8 +100,8 @@
                         <!--Цена мороженного-->
                     </li>
                     <li>
-                        <p>Жирность:</p>
                         <fieldset>
+                            <legend>Жирность:</legend>
                             <ul>
                                 <li>
                                     <input type="radio" name="fat" id="filter-0">
@@ -122,35 +122,36 @@
                             </ul>
                         </fieldset>
                     </li>
-                    <li>
-                        <p>Наполнители:</p>
-                        <fieldset>
-                            <ul>
-                                <li>
-                                    <input type="checkbox" name="Chocolate" id="filter-of-chocolate" checked>
-                                    <lable for="Choсolate">шоколадные</lable>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="Sprinkles" id="filter-of-sprinkles" checked>
-                                    <lable for="Sprinkles">сахарные посыпка</lable>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="fruits" id="filter-of-fruits">
-                                    <lable for="fruits">фрукты</lable>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="Syrup" id="filter-of-syrup">
-                                    <lable for="Syrup">сиропы</lable>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="jam" id="filter-of-jam">
-                                    <lable for="jam">джемы</lable>
-                                </li>
-                            </ul>
-                            <button type="button">Применить</button>
-                        </fieldset>
-                    </li>
                 </ul>
+                        <fieldset class="topings">
+                            <legend>Наполнители:</legend>
+                            <div class="toping-block">
+                                <ul class="toping-checkbox">
+                                    <li>
+                                        <input type="checkbox" name="Chocolate" id="filter-of-chocolate" checked>
+                                        <lable for="Choсolate">шоколадные</lable>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="Sprinkles" id="filter-of-sprinkles" checked>
+                                        <lable for="Sprinkles">сахарные посыпка</lable>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="fruits" id="filter-of-fruits">
+                                        <lable for="fruits">фрукты</lable>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="Syrup" id="filter-of-syrup">
+                                        <lable for="Syrup">сиропы</lable>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="jam" id="filter-of-jam">
+                                        <lable for="jam">джемы</lable>
+                                    </li>
+                                </ul>
+                                <button type="button">Применить</button>
+                            </div>
+                        </fieldset>
+                
             </section>
             <section>
                 <ul class="hits">
