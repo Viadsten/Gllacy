@@ -20,7 +20,10 @@
 
 button, 
 button:active, 
-button:focus {
+button:focus,
+select,
+select:active,
+select:focus {
     outline: none;
 }
 
@@ -1173,6 +1176,10 @@ footer{
     font-size: 35px;
 }
 
+.sort-all p, legend{
+    font-size: 14px;
+}
+
 .sort{
     margin: 0px;
     padding: 0px;
@@ -1192,16 +1199,23 @@ footer{
     text-decoration: none;
     background-color: #d07058;
     color: #fff;
+    padding: 8px 15px 10px 15px;
+    border-radius: 20px;
+    margin: 0 -15px 0 -15px;
 }
 
-.sort-list{
+.sort-area{
     padding-left: 15px;
     width: 185px;
     height: 35px;
     border-radius: 20px;
     border: none;
-    background-color: rgba(255,255,255,0.2);
     color: #fff;
+    -webkit-appearance: none;
+    background: url(gllacy/png/select-icon.png) no-repeat right;
+    -webkit-appearance: none;
+    background-position-x: 165px;
+    background-color: rgba(255,255,255,0.2);
 }
 
 .topings{
@@ -1223,4 +1237,14 @@ footer{
     list-style: none;
     display: flex;
     flex-direction: row;
+}
+
+.sort-list{
+    margin-top: 15px;
+}
+
+.toping-radio{
+    width: 415px;
+    display: flex;
+    justify-content: space-between;
 }
